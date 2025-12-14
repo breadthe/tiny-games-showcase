@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tiny Games Showcase</title>
+        <style>
+            @import url(https://fonts.bunny.net/css?family=pixelify-sans:400,500,600,700);
+
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+            }
+
+            h1 {
+                font-weight: 700;
+            }
+
+            h2 {
+                font-weight: 500;
+            }
+
+            .hero {
+                background-color: #f2f2f2;
+                padding: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            .title {
+                font-size: 48px;
+                line-height: 56px;
+                text-align: center;
+                color: #333;
+                font-family: "Pixelify Sans", display, serif;
+            }
+
+            .description {
+                font-size: 1rem;
+                line-height: 20px;
+                text-align: center;
+                margin-bottom: 1rem;
+                padding: 0 1rem 0 1rem;
+            }
+
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 1rem;
+            }
+
+            .card {
+                background-color: #f2f2f2;
+                border: 5px solid #fff;
+            }
+
+            .card:hover {
+                border: 5px solid #ccc;
+            }
+
+            .thumbnail {
+                width: 100%;
+                object-fit: cover;
+                margin-bottom: 0.5rem;
+            }
+
+            @media (max-width: 768px) {
+                .grid {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+
+            @media (max-width: 576px) {
+                .grid {
+                    grid-template-columns: repeat(1, 1fr);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="hero">
+            <h1 class="title">Pico-8 Games</h1>
+            <p class="description">
+                Tiny games made by me in Pico-8. 🕹️ Playable in the browser.
+            </p>
+        </div>
+        <div class="grid">
+            <div class="card">
+                <a
+                    href="shmup-1/game.html"
+                    title="Click to play in the browser"
+                >
+                    <img
+                        src="shmup-1/screenshot-1.png"
+                        alt="SHMUP 1 gameplay"
+                        class="thumbnail"
+                    />
+                </a>
+                <h2 class="title">
+                    <a
+                        href="shmup-1/game.html"
+                        title="Click to play in the browser"
+                        >SHMUP 1</a
+                    >
+                </h2>
+                <p class="description">
+                    Shoot-em-up Game 1. I made this by following
+                    <a href="https://www.youtube.com/@LazyDevs" target="_blank"
+                        >@LazyDevs</a
+                    >'s
+                    <a href="https://youtu.be/81WM_cjp9fo" target="_blank"
+                        >Shmup tutorial series</a
+                    >
+                    on YouTube.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
